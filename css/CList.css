@@ -1,0 +1,10 @@
+.CList p.CList_title{
+    color: #000000;
+    font-size: 40px;
+}
+.CList #Non_Overdue .day_item .deadline .date{
+    background-color: #ff0000;
+    padding: 20px;
+    display: block;
+    float: left;
+}
