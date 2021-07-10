@@ -29,23 +29,26 @@
     background-color: #e4e4e4;
 }
 .Navigator li a.nav_active{
-    background-color: #398ceb;
+    background-color: #49A1F1;
     font-weight: bold;
     color: #ffffff;
 }
 .Navigator li a.nav_active:hover{
-    background-color: #156cd1;
+    background-color: #2D93EF;
+}
+.Navigator li a.nav_active:active{
+    background-color: #2982cf;
 }
 .Navigator li.nav_right_float{
     float:right;
 }
 .Navigator li a.nav_important{
-    border: 2px solid #398ceb;
-    color: #398ceb;
+    border: 2px solid #49A1F1;
+    color: #49A1F1;
     padding: 4px 29px;
 }
 .Navigator li a.nav_important:hover{
-    border: 2px solid #398ceb;
-    background-color: #398ceb;
+    border: 2px solid #49A1F1;
+    background-color: #49A1F1;
     color: #ffffff;
 }

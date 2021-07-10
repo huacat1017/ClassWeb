@@ -1,7 +1,8 @@
 .quicklink_container{
-    background-color: #f6f6f6;
+    background-color: #ffffff;
+    border-right: 2px solid #e4e4e4;
     position: fixed;
     left: 0;
     top: 0;
-    width: 10%;
+    width: 20%;
 }

@@ -1,10 +1,149 @@
-.CList p.CList_title{
+:root {
+    --spacing: 50px;
+}  
+p.CList_title{
     color: #000000;
     font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: calc(var(--spacing) / 2)
 }
-.CList #Non_Overdue .day_item .deadline .date{
-    background-color: #ff0000;
-    padding: 20px;
-    display: block;
+div.line{
+    background-color: #e4e4e4;
+    width: calc(100% - var(--spacing));
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    align-self: center;
+}
+.CList{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.CList div.day_item{
+    display:flex;
+    flex-direction: row;
+}
+.CList div.day_item .deadline_container{
     float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.CList div.day_item .deadline_container .decoline{
+    width: 5px;
+    height: calc((100% - 86px) / 2);
+    background-color: #49A1F1;
+}
+.CList div.day_item .deadline_container .decoline.start{
+    border-top-left-radius: 2.5px;
+    border-top-right-radius: 2.5px;
+}
+.CList div.day_item .deadline_container .decoline.end{
+    border-bottom-left-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+}
+.CList div.day_item .deadline_container .deadline{
+    background-color: #49A1F1;
+    width: 80px;
+    height: 80px;
+    border: 3px #86C1F6 solid;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+.CList div.day_item .deadline .maindate{
+    font-family: 'Noto Serif TC', serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.CList div.day_item .deadline .subdate{
+    font-family: 'Noto Serif TC', serif;
+    color: #ffffff;
+    font-size: 14px;
+}
+.CList div.day_item .data{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-right: calc(var(--spacing) / 2);
+    width: 100%;
+}
+.CList div.day_item .data .homework_item{
+    background-color: #ffffff;
+    border: 2px solid #e4e4e4;
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.3s;
+}
+.CList div.day_item .data .homework_item:hover{
+    box-shadow: 2px 2px 3px #888888;
+}
+.CList div.day_item .data .homework_item .time{
+    cursor: default;
+    width: 100px;
+    text-align:center;
+    justify-self: flex-start;
+    display: block;
+}
+.CList div.day_item .data .homework_item .homework{
+    cursor: default;
+    flex: 1;
+    display: block;
+}
+.CList div.day_item .data .homework_item .homework .name{
+    text-align: center;
+    display: block;
+}
+.CList div.day_item .data .homework_item .homework .comments div{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    color: #49A1F1;
+}
+.CList div.day_item .data .homework_item .links{
+    width: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-self: flex-end;
+}
+.CList div.day_item .data .homework_item .links a{
+    display: block;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration:none;
+    background-color: #49A1F1;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.CList div.day_item .data .homework_item .links a:hover{
+    background-color: #2D93EF;
+}
+.CList div.day_item .data .homework_item .links a:active{
+    background-color: #2982cf;
+}
+.CList div.day_item .data .homework_item .seperator{
+    height: calc(100% - 4px);
+    background-color: #e4e4e4;
+    min-width: 1px;
+    display: block;
+}
+.CList div.day_item .data .homework_item .se_right{
+    justify-self: flex-end;
 }
