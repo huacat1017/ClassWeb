@@ -1,0 +1,10 @@
+:root {
+    --spacing: 50px;
+}
+table{
+    margin-left: calc(var(--spacing) / 2);
+    margin-right: calc(var(--spacing) / 2);
+}
+table td{
+    text-align: center;
+}

@@ -2,16 +2,18 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-        <title>一班不一般班網</title>      
+        <title>一班不一般班網</title> 
+        <link href="css/schedule.css" rel="stylesheet" type="text/css">
         <link href="css/navigator.css" rel="stylesheet" type="text/css">
         <link href="css/main_container.css" rel="stylesheet" type="text/css">
+        <link href="css/quicklink_container.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     </head>
     <body>
         <div class=Navigator>
             <a href="index.html" id=logo>
                 <img src="pic/logo.svg" style="height: 30px;float:left"></img>
-                <p>101班網</p>
+                <p>201班網</p>
             </a>
             <ul class=Navi_item>
                 <li><a href="index.html"">首頁</a></li>
@@ -21,7 +23,33 @@
                 <li><a href="otherService.html">其他功能</a></li>
                 <li class="nav_right_float"><a href="about.html" class="nav_important">關於我們</a></li>
             </ul>
-            
         </div>
+        <div class="quicklink_container">
+            <ul>
+                <li><a href="quick_day">暑假功課</a></li>
+            </ul>
+        </div>
+        <div class="main_container">
+            <p class="title">課表</p>
+            <div class="line"></div>
+            <table border="1px solid">
+                <thead>
+                    <tr>
+                        <td colspan="7">國二1班課表</td>
+                    </tr>
+                    <tr>
+                        <td>節</td>
+                        <td>時間</td>
+                        <td>星期一</td>
+                        <td>星期二</td>
+                        <td>星期三</td>
+                        <td>星期四</td>
+                        <td>星期五</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <script type="text/javascript" src="js/quicklink.js"></script>
+        <script type="text/javascript" src="js/main_container.js"></script>
     </body>
 </html>
