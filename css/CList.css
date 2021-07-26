@@ -60,13 +60,11 @@ div.line{
     cursor: default;
 }
 .CList div.day_item .deadline .maindate{
-    font-family: 'Noto Serif TC', serif;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
 }
 .CList div.day_item .deadline .subdate{
-    font-family: 'Noto Serif TC', serif;
     color: #ffffff;
     font-size: 14px;
 }
@@ -84,7 +82,7 @@ div.line{
     padding: 10px 0px;
     margin-top: 5px;
     margin-bottom: 5px;
-    border-radius: 12px;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -107,6 +105,7 @@ div.line{
 }
 .CList div.day_item .data .homework_item .homework .name{
     text-align: center;
+    font-size: 16px;
     display: block;
 }
 .CList div.day_item .data .homework_item .homework .comments div{
@@ -133,10 +132,10 @@ div.line{
     transition: 0.3s;
 }
 .CList div.day_item .data .homework_item .links a:hover{
-    background-color: #2D93EF;
+    background-color: #7eb7e9;
 }
 .CList div.day_item .data .homework_item .links a:active{
-    background-color: #2982cf;
+    background-color: #b4d3ee;
 }
 .CList div.day_item .data .homework_item .seperator{
     height: calc(100% - 4px);
